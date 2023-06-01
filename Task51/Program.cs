@@ -7,6 +7,8 @@
 // 8 4 2 4
 // Сумма элементов главной диагонали: 1+9+2 = 12
 
+
+
 int[,] CreateMatrixFormula(int rows, int columns, int min, int max)
 {
     int[,] matrix = new int[rows, columns];
@@ -40,8 +42,8 @@ int SumElementsOnDiagonal(int[,] matr)
 {
     int sum = 0;
     //int size = matr.GetLength(0) > matr.GetLength(1) ? matr.GetLength(1) : matr.GetLength(0);
-    
-    for (int i = 0; i < matr.GetLength(0) && i < matr.GetLength(1); i ++)
+
+    for (int i = 0; i < matr.GetLength(0) && i < matr.GetLength(1); i++)
     {
         sum += matr[i, i];
     }
